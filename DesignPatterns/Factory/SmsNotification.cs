@@ -8,6 +8,7 @@ namespace DesignPatterns.Factory
 {
     internal class SmsNotification: INotificationSender
     {
-        public void Send(string recepient, string message) => Console.WriteLine($"recepient: {recepient}, message: {message}")
+        public void Send(string recepient, string message)
+            => Console.WriteLine($"recepient: {recepient}, message: {message}");
     }
 }
