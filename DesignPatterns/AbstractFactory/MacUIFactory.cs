@@ -8,7 +8,7 @@ namespace DesignPatterns.AbstractFactory
 {
     public  class MacUIFactory: IUIFactory
     {
-        public void CreateButton() => new MacButton();
-        public void CreateCheckbox() => new MacCheckbox();
+        public IButton CreateButton() => new MacButton();
+        public ICheckbox CreateCheckbox() => new MacCheckbox();
     }
 }

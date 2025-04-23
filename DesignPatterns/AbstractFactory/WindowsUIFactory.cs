@@ -8,8 +8,8 @@ namespace DesignPatterns.AbstractFactory
 {
     internal class WindowsUIFactory: IUIFactory
     {
-        public void CreateButton() => new WindowsButton();
-        public void CreateCheckbox() => new WindowsCheckbox();
+        public IButton CreateButton() => new WindowsButton();
+        public ICheckbox CreateCheckbox() => new WindowsCheckbox();
 
 
     }

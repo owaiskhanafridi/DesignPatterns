@@ -13,8 +13,8 @@ namespace DesignPatterns.AbstractFactory
 
         public Application(IUIFactory factory)
         {
-            factory.CreateButton();
-            factory.CreateCheckbox();
+            _button = factory.CreateButton();
+            _checkbox = factory.CreateCheckbox();
         }
 
         public void RenderUI()

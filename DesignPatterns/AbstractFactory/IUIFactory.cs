@@ -8,7 +8,7 @@ namespace DesignPatterns.AbstractFactory
 {
     public interface IUIFactory
     {
-        void CreateButton();
-        void CreateCheckbox();
+        IButton CreateButton();
+        ICheckbox CreateCheckbox();
     }
 }
